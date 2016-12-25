@@ -1,4 +1,4 @@
-module.exports = (width) => {
+module.exports = ({width,pm}) => {
 
     let board = [];
     for (let i = 0; i<width; i++) {
@@ -74,7 +74,7 @@ module.exports = (width) => {
         const rl = readline.createInterface({
         input: process.stdin,
         output: process.stdout,
-        prompt: 'T__T : '
+        prompt: pm ? pm : 'T__T : '
         });
         rl.on('line', onInput.bind(obj,rl));
 
