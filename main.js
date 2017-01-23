@@ -7,12 +7,12 @@ const mock_rl = {
 let game = require('./TTT.js')({
     width: 3,
     pm: "lol > "
-}).start();
-// game.ai = true;
-// game.print_gird();
-// console.log(game.onInput(mock_rl,"play 1 1"));
-// console.log(game.onInput(mock_rl,"play 2 1"));
-// console.log(game.onInput(mock_rl,"play 2 2"));
-// console.log(game.onInput(mock_rl,"play 2 3"));
-// console.log(game.onInput(mock_rl,"play 3 3"));
-// console.log(game);
+});
+game.ai = true;
+game.print_gird();
+console.log(game.onInput(mock_rl,"play 1 1"));
+console.log(game.onInput(mock_rl,"play 2 1"));
+console.log(game.onInput(mock_rl,"play 2 2"));
+console.log(game.onInput(mock_rl,"play 2 3"));
+console.log(game.onInput(mock_rl,"play 3 3"));
+console.log(game);
